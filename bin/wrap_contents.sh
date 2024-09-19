@@ -18,7 +18,7 @@ if [ ! -f "$middle_file" ]; then
 fi
 
 if [ ! -f "$header_file" ]; then
-  echo "Header file $header_file does not exist."
+  echo "$0: Header file $header_file does not exist."
   exit 1
 fi
 
