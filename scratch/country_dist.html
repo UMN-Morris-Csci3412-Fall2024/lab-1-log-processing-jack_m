@@ -1,0 +1,76 @@
+	<!-- ++++++++++++ START OF COUNTRY HEADER +++++++++++++++++++++++++++++++ -->
+	
+	google.setOnLoadCallback(drawCountryDistribution);
+
+	function drawCountryDistribution() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Country');
+		data.addColumn('number', 'Number of failed logins');
+
+	<!-- ++++++++++++ END OF COUNTRY HEADER +++++++++++++++++++++++++++++++ -->
+data.addRow(['', 27]);
+data.addRow(['also', 1]);
+data.addRow(['check', 1]);
+data.addRow(['do', 1]);
+data.addRow(['equivalent', 1]);
+data.addRow(['ignore', 1]);
+data.addRow(['join', 1]);
+data.addRow(['join', 1]);
+data.addRow(['like', 1]);
+data.addRow(['line', 1]);
+data.addRow(['obey', 1]);
+data.addRow(['output', 1]);
+data.addRow(['replace', 1]);
+data.addRow(['treat', 1]);
+data.addRow(['use', 1]);
+data.addRow([''sort'', 1]);
+data.addRow(['--check-order', 1]);
+data.addRow(['--header', 1]);
+data.addRow(['--help', 1]);
+data.addRow(['--nocheck-order', 1]);
+data.addRow(['--version', 1]);
+data.addRow(['-1', 1]);
+data.addRow(['-2', 1]);
+data.addRow(['-a', 1]);
+data.addRow(['-e', 1]);
+data.addRow(['-i,', 1]);
+data.addRow(['-j', 1]);
+data.addRow(['-o', 1]);
+data.addRow(['-t', 1]);
+data.addRow(['-v', 1]);
+data.addRow(['-z,', 1]);
+data.addRow(['Copyright', 1]);
+data.addRow(['For', 1]);
+data.addRow(['Full', 1]);
+data.addRow(['GNU', 1]);
+data.addRow(['Important:', 1]);
+data.addRow(['Report', 1]);
+data.addRow(['This', 1]);
+data.addRow(['Unless', 1]);
+data.addRow(['When', 1]);
+data.addRow(['Written', 1]);
+data.addRow(['blanks.', 1]);
+data.addRow(['comm(1),', 1]);
+data.addRow(['counted', 1]);
+data.addRow(['join', 1]);
+data.addRow(['join', 1]);
+data.addRow(['joined,', 1]);
+data.addRow(['or', 1]);
+data.addRow(['the', 1]);
+data.addRow(['then', 1]);
+data.addRow(['AUTHOR', 1]);
+data.addRow(['COPYRIGHT', 1]);
+data.addRow(['DESCRIPTION', 1]);
+data.addRow(['GNU', 1]);
+data.addRow(['JOIN(1)', 1]);
+data.addRow(['NAME', 1]);
+data.addRow(['REPORTING', 1]);
+data.addRow(['SEE', 1]);
+data.addRow(['SYNOPSIS', 1]);
+	<!-- ++++++++++++ START OF COUNTRY FOOTER +++++++++++++++++++++++++++++++ -->
+
+		var chart = new google.visualization.GeoChart(document.getElementById('country_dist_div'));
+		chart.draw(data, {width: 800, height: 500, title: 'Failed logins by country'});
+	}
+
+	<!-- ++++++++++++ END OF COUNTRY FOOTER +++++++++++++++++++++++++++++++ -->

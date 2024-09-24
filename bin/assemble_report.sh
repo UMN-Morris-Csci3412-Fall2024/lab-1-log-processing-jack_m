@@ -13,8 +13,8 @@ output_file="$input_dir/failed_login_summary.html"
 country_file="$input_dir/country_dist.html"
 hours_file="$input_dir/hours_dist.html"
 username_file="$input_dir/username_dist.html"
-header_file="$input_dir/summary_header.html"
-footer_file="html_components/summary_footer.html"
+header_file="html_components/summary_plots_header.html"
+footer_file="html_components/summary_plots_footer.html"
 
 if [ ! -f "$country_file" ]; then
   echo "$0: Country distribution file $country_file does not exist."
@@ -51,7 +51,7 @@ cat "$country_file" "$hours_file" "$username_file" > "$temp_file"
 
 # Use wrap_contents.sh to add the overall HTML header and footer
 echo "Wrapping the combined content with the overall HTML header and footer..."
-./bin/wrap_contents.sh "$temp_file" "$header_file" "$footer_file" "$output_file"
+./bin/wrap_contents.sh "$temp_file" "html_components/summary_plots" "$output_file"
 echo "Report created: $output_file"
 
 # Clean up the temporary file

@@ -28,7 +28,7 @@ temp_file=$(mktemp)
 
 # Find all failed login attempts and process them
 find "$input_dir" -type f -name "failed_login_data.txt" -exec cat {} + | \
-awk '{print $5}' | awk etc/country_ipmap.txt -F ": " '{print $2}' | sort | uniq -c | \
+awk '{print $5}' | awk -F ": " '{print $2}' etc/country_IP_map.txt | man join | sort | uniq -c | \
 awk '{print "data.addRow([\x27" $2 "\x27, " $1 "]);"}' > "$temp_file"
 
 # Use wrap_contents.sh to add the header and footer

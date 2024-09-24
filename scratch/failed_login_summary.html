@@ -1,0 +1,272 @@
+<!-- ++++++++++++ START OF OVERALL HEADER +++++++++++++++++++++++++++++++ -->
+<html>
+<head>
+	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+	<script type='text/javascript'>
+	google.load('visualization', '1', {'packages':['corechart', 'geochart']});
+
+	<!-- ++++++++++++ END OF OVERALL HEADER +++++++++++++++++++++++++++++++ -->
+	<!-- ++++++++++++ START OF COUNTRY HEADER +++++++++++++++++++++++++++++++ -->
+	
+	google.setOnLoadCallback(drawCountryDistribution);
+
+	function drawCountryDistribution() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Country');
+		data.addColumn('number', 'Number of failed logins');
+
+	<!-- ++++++++++++ END OF COUNTRY HEADER +++++++++++++++++++++++++++++++ -->
+data.addRow(['', 27]);
+data.addRow(['also', 1]);
+data.addRow(['check', 1]);
+data.addRow(['do', 1]);
+data.addRow(['equivalent', 1]);
+data.addRow(['ignore', 1]);
+data.addRow(['join', 1]);
+data.addRow(['join', 1]);
+data.addRow(['like', 1]);
+data.addRow(['line', 1]);
+data.addRow(['obey', 1]);
+data.addRow(['output', 1]);
+data.addRow(['replace', 1]);
+data.addRow(['treat', 1]);
+data.addRow(['use', 1]);
+data.addRow([''sort'', 1]);
+data.addRow(['--check-order', 1]);
+data.addRow(['--header', 1]);
+data.addRow(['--help', 1]);
+data.addRow(['--nocheck-order', 1]);
+data.addRow(['--version', 1]);
+data.addRow(['-1', 1]);
+data.addRow(['-2', 1]);
+data.addRow(['-a', 1]);
+data.addRow(['-e', 1]);
+data.addRow(['-i,', 1]);
+data.addRow(['-j', 1]);
+data.addRow(['-o', 1]);
+data.addRow(['-t', 1]);
+data.addRow(['-v', 1]);
+data.addRow(['-z,', 1]);
+data.addRow(['Copyright', 1]);
+data.addRow(['For', 1]);
+data.addRow(['Full', 1]);
+data.addRow(['GNU', 1]);
+data.addRow(['Important:', 1]);
+data.addRow(['Report', 1]);
+data.addRow(['This', 1]);
+data.addRow(['Unless', 1]);
+data.addRow(['When', 1]);
+data.addRow(['Written', 1]);
+data.addRow(['blanks.', 1]);
+data.addRow(['comm(1),', 1]);
+data.addRow(['counted', 1]);
+data.addRow(['join', 1]);
+data.addRow(['join', 1]);
+data.addRow(['joined,', 1]);
+data.addRow(['or', 1]);
+data.addRow(['the', 1]);
+data.addRow(['then', 1]);
+data.addRow(['AUTHOR', 1]);
+data.addRow(['COPYRIGHT', 1]);
+data.addRow(['DESCRIPTION', 1]);
+data.addRow(['GNU', 1]);
+data.addRow(['JOIN(1)', 1]);
+data.addRow(['NAME', 1]);
+data.addRow(['REPORTING', 1]);
+data.addRow(['SEE', 1]);
+data.addRow(['SYNOPSIS', 1]);
+	<!-- ++++++++++++ START OF COUNTRY FOOTER +++++++++++++++++++++++++++++++ -->
+
+		var chart = new google.visualization.GeoChart(document.getElementById('country_dist_div'));
+		chart.draw(data, {width: 800, height: 500, title: 'Failed logins by country'});
+	}
+
+	<!-- ++++++++++++ END OF COUNTRY FOOTER +++++++++++++++++++++++++++++++ -->
+	<!-- ++++++++++++ START OF HOURS HEADER +++++++++++++++++++++++++++++++ -->
+	
+	google.setOnLoadCallback(drawHoursDistribution);
+
+	function drawHoursDistribution() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Hour of the day');
+		data.addColumn('number', 'Number of failed logins');
+
+	<!-- ++++++++++++ END OF HOURS HEADER +++++++++++++++++++++++++++++++ -->
+data.addRow(['00', 4]);
+data.addRow(['01', 8]);
+data.addRow(['02', 4]);
+data.addRow(['04', 4]);
+data.addRow(['06', 125]);
+data.addRow(['07', 119]);
+data.addRow(['08', 21]);
+data.addRow(['10', 4]);
+data.addRow(['11', 4]);
+data.addRow(['12', 4]);
+data.addRow(['13', 8]);
+data.addRow(['18', 5]);
+data.addRow(['19', 4]);
+data.addRow(['20', 4]);
+data.addRow(['23', 4]);
+	<!-- ++++++++++++ START OF HOURS FOOTER +++++++++++++++++++++++++++++++ -->
+
+		var chart = new google.visualization.ColumnChart(document.getElementById('hours_dist_div'));
+		chart.draw(data, {width: 800, height: 550, title: 'Failed logins by hour of the day'});
+	}
+
+	<!-- ++++++++++++ END OF HOURS FOOTER +++++++++++++++++++++++++++++++ -->
+	<!-- ++++++++++++ START OF USERNAME HEADER +++++++++++++++++++++++++++++++ -->
+	
+	google.setOnLoadCallback(drawUsernameDistribution);
+
+	function drawUsernameDistribution() {
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Username');
+		data.addColumn('number', 'Number of failed logins');
+
+	<!-- ++++++++++++ END OF USERNAME HEADER +++++++++++++++++++++++++++++++ -->
+data.addRow(['a', 1]);
+data.addRow(['aaron', 1]);
+data.addRow(['admin', 8]);
+data.addRow(['amanda', 3]);
+data.addRow(['anna', 1]);
+data.addRow(['apache', 1]);
+data.addRow(['armen', 1]);
+data.addRow(['backuppc', 1]);
+data.addRow(['benjamin', 1]);
+data.addRow(['bernd', 1]);
+data.addRow(['blog', 1]);
+data.addRow(['carlos', 1]);
+data.addRow(['cindy', 1]);
+data.addRow(['core', 1]);
+data.addRow(['cvsuser', 3]);
+data.addRow(['cyrus', 1]);
+data.addRow(['dank', 1]);
+data.addRow(['dave', 1]);
+data.addRow(['db2inst1', 1]);
+data.addRow(['delta', 1]);
+data.addRow(['denis', 1]);
+data.addRow(['der', 1]);
+data.addRow(['diane', 1]);
+data.addRow(['doodz', 2]);
+data.addRow(['download', 1]);
+data.addRow(['ernie', 1]);
+data.addRow(['fabrice', 2]);
+data.addRow(['farrell', 1]);
+data.addRow(['festival', 1]);
+data.addRow(['files', 1]);
+data.addRow(['first', 1]);
+data.addRow(['fred', 1]);
+data.addRow(['frei', 1]);
+data.addRow(['gary', 1]);
+data.addRow(['gast', 2]);
+data.addRow(['genoveva', 1]);
+data.addRow(['gt05', 1]);
+data.addRow(['guest', 5]);
+data.addRow(['hallo', 1]);
+data.addRow(['hans', 1]);
+data.addRow(['hermes', 1]);
+data.addRow(['im', 1]);
+data.addRow(['image', 1]);
+data.addRow(['informix', 1]);
+data.addRow(['iraf', 1]);
+data.addRow(['javi', 1]);
+data.addRow(['je', 1]);
+data.addRow(['jean', 1]);
+data.addRow(['juan', 1]);
+data.addRow(['kor', 1]);
+data.addRow(['lab', 1]);
+data.addRow(['linda', 1]);
+data.addRow(['mail', 1]);
+data.addRow(['mama', 1]);
+data.addRow(['martin', 2]);
+data.addRow(['matt', 1]);
+data.addRow(['mia', 1]);
+data.addRow(['michaels', 1]);
+data.addRow(['michal', 1]);
+data.addRow(['michel', 1]);
+data.addRow(['mom', 2]);
+data.addRow(['moshutzu', 1]);
+data.addRow(['nagios', 4]);
+data.addRow(['nick', 2]);
+data.addRow(['nickelan', 2]);
+data.addRow(['nokia', 1]);
+data.addRow(['oliver', 1]);
+data.addRow(['oracle', 3]);
+data.addRow(['postgres', 1]);
+data.addRow(['production', 1]);
+data.addRow(['project', 3]);
+data.addRow(['prueba', 1]);
+data.addRow(['reboot', 1]);
+data.addRow(['restart', 1]);
+data.addRow(['root', 137]);
+data.addRow(['samuel', 1]);
+data.addRow(['selifods', 1]);
+data.addRow(['sid', 1]);
+data.addRow(['sirsi', 1]);
+data.addRow(['spamd', 1]);
+data.addRow(['sponsor', 1]);
+data.addRow(['stats', 1]);
+data.addRow(['stella', 1]);
+data.addRow(['stephanie', 1]);
+data.addRow(['stud', 1]);
+data.addRow(['student', 3]);
+data.addRow(['svn', 1]);
+data.addRow(['swsoft', 1]);
+data.addRow(['temp', 7]);
+data.addRow(['test', 20]);
+data.addRow(['test10', 1]);
+data.addRow(['test11', 1]);
+data.addRow(['test12', 1]);
+data.addRow(['test2', 1]);
+data.addRow(['test3', 1]);
+data.addRow(['test4', 1]);
+data.addRow(['test5', 1]);
+data.addRow(['test6', 1]);
+data.addRow(['test7', 1]);
+data.addRow(['test8', 1]);
+data.addRow(['test9', 1]);
+data.addRow(['tomcat5', 1]);
+data.addRow(['tone', 1]);
+data.addRow(['toto', 1]);
+data.addRow(['transfer', 1]);
+data.addRow(['trash', 1]);
+data.addRow(['ts', 1]);
+data.addRow(['ubuntu', 1]);
+data.addRow(['user', 4]);
+data.addRow(['valas', 1]);
+data.addRow(['video', 2]);
+data.addRow(['vincent', 1]);
+data.addRow(['visitor', 1]);
+data.addRow(['vivek', 1]);
+data.addRow(['vmware', 1]);
+data.addRow(['vnc', 1]);
+data.addRow(['vwalker', 1]);
+data.addRow(['wei', 1]);
+data.addRow(['william', 1]);
+data.addRow(['wolfgang', 1]);
+data.addRow(['wrestling', 1]);
+data.addRow(['xbox', 1]);
+data.addRow(['xxx', 3]);
+data.addRow(['zimbra', 1]);
+	<!-- ++++++++++++ START OF USERNAME FOOTER +++++++++++++++++++++++++++++++ -->
+
+		var chart = new google.visualization.PieChart(document.getElementById('username_dist_div'));
+		chart.draw(data, {width: 800, height: 550, title: 'Failed logins by username'});
+	}
+
+	<!-- ++++++++++++ END OF USERNAME FOOTER +++++++++++++++++++++++++++++++ -->
+	<!-- ++++++++++++ START OF OVERALL FOOTER +++++++++++++++++++++++++++++++ -->
+
+	</script>
+</head>
+
+<body>
+	<h1>Distribution of failed logins by username</h1>
+	<div id='username_dist_div' style='width: 800px; height: 600px;'></div>
+	<h1>Distribution of failed logins by hour of the day</h1>
+	<div id='hours_dist_div' style='width: 800px; height: 600px;'></div>
+	<h1>Distribution of failed logins by country of origin</h1>
+	<div id='country_dist_div' style='width: 900px; height: 600px;'></div>
+</body>
+</html>
+<!-- ++++++++++++ END OF OVERALL FOOTER +++++++++++++++++++++++++++++++ -->
